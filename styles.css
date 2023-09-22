@@ -1,0 +1,179 @@
+*{ /*Se aplica a toda la pagina*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'roboto';
+}
+/*AREA COMPLETA---------------body*/
+body{  
+    padding-top: 0;
+    background-color: rgb(120, 251, 255);
+}
+/*ESTILOS GENERALES---------------*/
+.fuente_clara{
+    color: white;
+}
+.fuente_oscura{
+    color: rgb(0, 94, 81);
+}
+.fuente_acento{
+    color: brown;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*MENU*/
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 25px;
+    color: red;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*ENCABEZADO---------------heaader*/
+header{
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 20px;
+    background-color: #05992a;
+    width: 100%;
+}
+.item_fixed{ 
+    position:fixed /* -------------deja en una sola posicion el header PREGUNTAR*/
+}
+header h1.logo{
+    display: inline-block;
+}
+header nav{
+    float: right;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+/*MEDIA QUERIES*/
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header{
+        background-color: #FFD700;
+    }
+    .acerca_de{
+        text-align: center;
+    }
+    .acerca_imagen { /*VER DONDE VA ESTO*/
+        margin-bottom: 40px;
+
+    }
+    h2.fuente-acento {
+        text-align: center;
+    }
+    .checkbtn {
+        display: block;
+    }
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(104, 253, 148);
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn {
+        color: rgb(0, 0, 0);
+    }
+
+}
+
+
+/*AREA DE CONTENIDO-----------main*/
+main{
+    margin: 78px 10px 10px 10px ; /* PREGUNTAR SI ES CORRECTO*/
+    background-color: #87CEEB;
+    width: 100%;
+}
+.section_principal{
+    padding: 40px 10px 10px 10px;
+    background-color: #5ae9ad;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+.acerca_de{
+  width: 40%;
+}
+
+#logo1{
+    border: solid red;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+
+}
+#banner1{
+    width: 100%;
+
+}
+/*SECCION DE TARJETAS*/
+.nuestros{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.section_tarjetas{
+    padding: 0;
+    background-color: #FFD700;
+    width: 100%;
+    display: flex;
+
+    justify-content: space-around;
+}
+#imagen_tarjeta1, #imagen_tarjeta2, #imagen_tarjeta3{
+    width: 250px;
+    height: 250px;
+    /*border: solid blueviolet; ----------------------  quitar luego----*/
+}
+.tarjetas{
+    width: 300px;
+    height: 500px;
+    padding: 10px 20px;
+    margin: 50px;
+    /*border: solid red; -------------------------------quitar luego*/
+    background-color: #5ae9ad;
+    float: left;
+}
+/*PIE DE PAGINA-------------footer*/
+footer{
+    clear: both;
+    padding: 10px;
+    margin:  10px;
+    background-color: #ADD8E6;
+    width: 100%;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Para html5 -->
+<html lang="es"> <!-- indica que la pagina va a tener contenido en mayoria español -->
+<head> <!-- toda la informacion que no se visualiza en el navegador -->
+    <meta charset="UTF-8"> <!-- para caracteres extraños --> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- que se visualice de mantera correcta en navegadores -->
+    <title>ElectroRep</title> <!-- titulo de web, aparece en la esptaña -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>  <!--paso 21-->
+    <script src="script.js" defer></script>
+</head>
+<body> <!-- va todo lo que se vizualiza -->
+    <header id="encabezado" class="item_fixed"> <!-- elemento semantico /etiquetas semanticas -->
+        <h1 class="fuente_clara logo">ElectroRep</h1>
+        <nav> <!-- elemento semantico dentro de header -->
+            <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+            <ul class="menu"> <!-- lista desordenada -->
+                <li><a href="index1.html">Inicio</a></li> <!-- li es elemento de listay a es ancla -->
+                <li><a href="index1.html">Trabajos</a></li>
+                <li><a href="#main_principal">Quienes somos</a></li>
+                <li><a href="index1.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main_principal"> <!-- elemento semantico -->
+        <section class="section_principal"> <!-- elemento semantico dentro de main -->
+           <div class="acerca_de">
+            <h2 class="texto_centrado">Quienes somos</h2>
+            <p class="texto_centrado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis 
+                corrupti, quia velit qui voluptatum fugit temporibus repellat doloribus natus. 
+                Tempora iste vitae laboriosam nam? Totam maiores molestiae reprehenderit
+                distinctio reiciendis.</p>
+            </div>
+            <img id="logo1" src="img/logo.jpeg" alt="logo de ElectroRep">
+        </section>
+        <section class="banner">
+            <img id="banner1" src="img/banner.jpeg" alt="banner de ElectroRep">
+        </section>
+        <section class="section_tarjetas">
+            <nav class="nav_tarjetas">
+                <div class="nuestros">
+                    <h2>Nuestros Servicios</h2>
+                </div>
+                <div class="tarjetas">
+                    <h3>Reparacion</h3>
+                    <img id="imagen_tarjeta1" src="img/reparacion.jpeg" alt="reparacion electronica" sizes="30px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                        repellat fuga explicabo dolores blanditiis fugiat neque dolorum minus 
+                        placeat, itaque vitae iste reprehenderit ut repellendus non quis illo.
+                        Quam, iure!</p>
+                    <li><a href="index1.html">Saber mas</a></li>
+                </div>
+                <div class="tarjetas">
+                    <h3>Mantenimiento</h3>
+                    <img id="imagen_tarjeta2" src="img/mantenimiento.jpeg" alt="mantenimiento electronico">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                        repellat fuga explicabo dolores blanditiis fugiat neque dolorum minus 
+                        placeat, itaque vitae iste reprehenderit ut repellendus non quis illo.
+                        Quam, iure!</p>
+                    <li><a href="index1.html">Saber mas</a></li>
+                </div>
+                <div class="tarjetas">
+                    <h3>Instalacion</h3>
+                    <img id="imagen_tarjeta3" src="img/instalaccion.jpeg" alt="intalacion electronica">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                        repellat fuga explicabo dolores blanditiis fugiat neque dolorum minus 
+                        placeat, itaque vitae iste reprehenderit ut repellendus non quis illo.
+                        Quam, iure!</p>
+                    <li><a href="index1.html">Saber mas</a></li>    
+                </div>
+         </nav>  
+        </section>
+
+        
+    </main>
+    <footer> <!-- elemento semantico -->
+        <div>
+            <p>creado por Sebastian Bueno</p>
+            <a href="https://wa.me/3116286184">Contacto</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
